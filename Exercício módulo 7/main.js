@@ -24,5 +24,6 @@ form.addEventListener("submit", function(e){
         const containerErrorMessage = document.querySelector(".error-message");
         containerErrorMessage.innerHTML = errorMessage;
         containerErrorMessage.style.display = "block";
+        valorUm.style.border = "1px solid red";
     }
 })
