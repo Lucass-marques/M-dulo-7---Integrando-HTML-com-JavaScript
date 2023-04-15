@@ -13,17 +13,22 @@ form.addEventListener("submit", function(e){
     }
 
     formEValido = validarNumero(valorUm, valorDois);
+    
+    const containerSuccessMessage = document.querySelector(".success-message");
+    const containerErrorMessage = document.querySelector(".error-message");
 
     if(formEValido) {
-        const containerSuccessMessage = document.querySelector(".success-message");
+        
         containerSuccessMessage.innerHTML = successMessage;
         containerSuccessMessage.style.display = "block";
+        containerErrorMessage.style.display = "none";
 
     }
     else {
-        const containerErrorMessage = document.querySelector(".error-message");
+        
         containerErrorMessage.innerHTML = errorMessage;
         containerErrorMessage.style.display = "block";
-        valorUm.style.border = "1px solid red";
+        containerSuccessMessage.style.display = "none";
+    
     }
 })
