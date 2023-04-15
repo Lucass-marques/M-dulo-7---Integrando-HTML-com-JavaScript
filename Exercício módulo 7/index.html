@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de números</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Verificador de números</h1>
+        <h2>Escreva dois números abaixo:</h2>
+        <form id="verificador">
+            <input type="number" id="valor-1" required placeholder="escreva o primeiro número"/>
+            <input type="number" id="valor-2" required placeholder="escreva o segundo número" />
+            <p class="error-message"></p>
+            <button id="btn-verificar" type="submit">Verificar</button>
+            <h3>O segundo número deverá ser maior que o primeiro.</h3>
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
